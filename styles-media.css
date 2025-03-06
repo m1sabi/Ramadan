@@ -1,0 +1,98 @@
+@media (max-width: 600px) {
+  /* Combine both body blocks into one */
+  body {
+    width: 100%;
+    /* Merge margin: 10px and margin-top: 0px → margin: 10px 0 */
+    margin: 10px 0;
+    /* If you truly want the body to be a flex container */
+    display: flex;
+    flex-direction: column; /* from your second body block */
+    align-items: center;    /* from your second body block */
+  }
+
+  .selectors {
+    text-align: center;
+    margin: 0;
+  }
+
+  .outer-container {
+    /* Merge margin: 10px; margin-top: 0px → margin: 0 10px 10px */
+    margin: 0 10px 10px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .inner-container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  select,
+  button {
+    font-size: 0.9rem; /* slightly smaller text on small screens */
+  }
+
+  .1st-table {
+    width: 70%; /* use full width on mobile */
+  }
+
+  .2nd-table {
+    border-collapse: collapse;
+    margin: 5px auto; /* center horizontally */
+    width: 60%;
+  }
+
+  #city-list-container {
+    width: 100%; /* Full width on mobile */
+    color: blue;
+    font-size: 0.5rem;
+  }
+
+  #city-list-container2 {
+    width: 80%;  /* Full width on mobile */
+    color: blue;
+    font-size: 0.8rem;
+  }
+
+  .text-column {
+    width: 0%;
+  }
+
+  .column {
+    width: 100% !important; /* Ensure full width */
+    padding: 10px;
+    text-align: center;
+  }
+
+  .list-column {
+    width: 100%;
+    order: unset; /* Reset ordering for smaller screens */
+    padding: 10px;
+    text-align: center;
+  }
+
+  .expl {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  #exp4 {
+    font-weight: bold;
+    margin-top: 0;
+    font-size: 0.8rem;
+  }
+
+  #exp3 {
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-top: 0;
+  }
+
+  #exp2 {
+    font-size: 0.8rem;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+}
